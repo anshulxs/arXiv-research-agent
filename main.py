@@ -30,7 +30,6 @@ def main():
         with open(output_path.format(slug=slug), "w", encoding="utf-8") as f:
             f.write(report)
         print(f"Report written to {output_path.format(slug=slug)}")
-        app.get_graph().print_ascii()
         return report
     
     if len(sys.argv) < 2:
